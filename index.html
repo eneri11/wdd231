@@ -1,14 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- ==========================
+         META INFORMATION
+    =========================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Personal Homepage</title>
-</head>
-<body>
-    <h1>Welcome to WDD 130.</h1>
-    <p>This page will become your homepage for the course. You will remove this text and replace it with your own personal details.</p>
 
-    <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+    <title>Home | Your Name</title>
+
+    <meta name="description"
+      content="Student portfolio for WDD131 showcasing web development projects and certificate courses.">
+
+    <meta name="author" content="Your Name">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header>
+
+        <div class="logo-container">
+
+            <img src="images/logo.svg" alt="Site Logo" class="logo" width="60" height="60">
+
+            <span>Your Name</span>
+
+        </div>
+
+        <button id="menu" aria-label="Open Navigation Menu">
+
+            ☰
+
+        </button>
+
+        <nav>
+
+            <ul class="navigation">
+
+                <li>
+                    <a href="index.html" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chamber/index.html">
+                        Chamber
+                    </a>
+                </li>
+
+                <li>
+                    <a href="final/index.html">
+                        Final
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main>
+
+        <h1>Home</h1>
+
+        <!-- About Me -->
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="card-content">
+
+                <p>
+
+                    Hello! My name is <strong>Your Name</strong>.
+
+                    I am currently studying Web Development and Software Development.
+
+                    I enjoy creating responsive websites using HTML, CSS, and JavaScript.
+
+                    My goal is to become a professional Full-Stack Developer while continuously
+                    learning modern web technologies.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Student Photo -->
+
+        <section class="card">
+
+            <h2>Student Photo</h2>
+
+            <div class="card-content photo">
+
+                <img src="images/profile.webp" alt="Portrait of Your Name" width="250" height="250"
+                  loading="lazy">
+
+            </div>
+
+        </section>
+
+        <!-- Certificate Courses -->
+
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filter-buttons">
+
+                <button id="all">All</button>
+
+                <button id="wdd">WDD</button>
+
+                <button id="cse">CSE</button>
+
+            </div>
+
+            <!-- JavaScript inserts cards here -->
+
+            <div id="course-container">
+
+            </div>
+
+            <p class="credits">
+
+                Total Credits:
+
+                <span id="totalCredits"></span>
+
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">
+
+                <img src="images/github.svg" alt="GitHub" width="40" height="40">
+
+            </a>
+
+            <a href="https://linkedin.com/in/YOURUSERNAME" target="_blank" rel="noopener">
+
+                <img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40">
+
+            </a>
+
+            <a href="https://x.com/YOURUSERNAME" target="_blank" rel="noopener">
+
+                <img src="images/x.svg" alt="X" width="40" height="40">
+
+            </a>
+
+        </div>
+
+        <p>
+
+            ©
+
+            <span id="currentyear"></span>
+
+            Your Name
+
+            |
+
+            Philippines
+
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
 </body>
+
 </html>

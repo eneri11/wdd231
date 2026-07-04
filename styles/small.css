@@ -1,0 +1,311 @@
+/* ============================================
+   WDD131 Home Page
+   Mobile First Styles
+============================================ */
+
+/* ---------- CSS VARIABLES ---------- */
+
+:root {
+    --primary-color: #0b3d91;
+    --secondary-color: #1f2937;
+    --accent-color: #f59e0b;
+
+    --background-color: #f5f7fa;
+    --card-color: #ffffff;
+    --completed-color: #0b3d91;
+
+    --text-color: #222;
+    --light-text: #ffffff;
+    --border-color: #d6d6d6;
+
+    --max-width: 1200px;
+
+    --shadow:
+        0 3px 8px rgba(0, 0, 0, .12);
+
+    --radius: 10px;
+
+    --transition: .3s ease;
+}
+
+/* ---------- GLOBAL ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ---------- IMAGES ---------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    transition: var(--transition);
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: var(--primary-color);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .75rem 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.logo {
+    width: 55px;
+}
+
+.logo-container span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* ---------- MENU BUTTON ---------- */
+
+#menu {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation li {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+.navigation a {
+    display: block;
+    padding: .85rem 1rem;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: rgba(255, 255, 255, .15);
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- CARDS ---------- */
+
+.card,
+.courses {
+    background: var(--card-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    margin-bottom: 1.5rem;
+
+    overflow: hidden;
+}
+
+.card h2,
+.courses h2 {
+    margin: 0;
+    padding: .85rem;
+    text-align: center;
+
+    background: var(--primary-color);
+    color: white;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: .75rem;
+
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.filter-buttons button {
+
+    padding: .75rem 1.25rem;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: var(--secondary-color);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.filter-buttons button:hover {
+
+    background: var(--accent-color);
+
+}
+
+/* ---------- COURSE CARDS ---------- */
+
+#course-container {
+
+    display: grid;
+
+    gap: 1rem;
+
+    padding: 1rem;
+
+}
+
+.course {
+
+    padding: 1rem;
+
+    border-radius: 8px;
+
+    background: #ececec;
+
+    text-align: center;
+
+    border-left: 6px solid var(--secondary-color);
+
+}
+
+.completed {
+
+    background: var(--completed-color);
+
+    color: white;
+
+}
+
+/* ---------- CREDITS ---------- */
+
+.credits {
+
+    text-align: center;
+
+    padding-bottom: 1rem;
+
+    font-weight: bold;
+
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+
+    background: var(--secondary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 2rem 1rem;
+
+}
+
+.social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.social img {
+
+    width: 40px;
+
+    transition: transform .25s ease;
+
+}
+
+.social img:hover {
+
+    transform: scale(1.1);
+
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+
+button:focus,
+a:focus {
+
+    outline: 3px solid var(--accent-color);
+
+    outline-offset: 3px;
+
+}
