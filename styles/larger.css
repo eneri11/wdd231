@@ -1,0 +1,95 @@
+/* ============================================
+   Desktop Layout
+============================================ */
+
+@media only screen and (min-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+
+        padding: 1rem 2rem;
+
+    }
+
+    #menu {
+
+        display: none;
+
+    }
+
+    /* ---------- NAVIGATION ---------- */
+
+    nav {
+
+        margin-left: auto;
+
+    }
+
+    .navigation {
+
+        display: flex !important;
+
+        flex-direction: row;
+
+        gap: .5rem;
+
+    }
+
+    .navigation li {
+
+        border: none;
+
+    }
+
+    .navigation a {
+
+        border-radius: 6px;
+
+    }
+
+    /* ---------- MAIN GRID ---------- */
+
+    main {
+
+        display: grid;
+
+        grid-template-columns: 2fr 1fr;
+
+        gap: 1.5rem;
+
+    }
+
+    /* Page title */
+
+    main h1 {
+
+        grid-column: 1 / -1;
+
+    }
+
+    /* Courses spans full width */
+
+    .courses {
+
+        grid-column: 1 / -1;
+
+    }
+
+    /* ---------- COURSE GRID ---------- */
+
+    #course-container {
+
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    .social {
+
+        gap: 2rem;
+
+    }
+
+}
