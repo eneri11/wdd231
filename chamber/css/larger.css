@@ -1,0 +1,77 @@
+/* ===========================================
+   Large Screen Styles
+=========================================== */
+
+@media (min-width: 768px) {
+
+    header {
+
+        display: flex;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        padding: 1rem 2rem;
+    }
+
+    #menuButton {
+
+        display: none;
+    }
+
+    nav {
+
+        display: block;
+    }
+
+    nav ul {
+
+        display: flex;
+
+        gap: 1rem;
+    }
+
+    nav li {
+
+        margin: 0;
+    }
+
+    nav a {
+
+        background: transparent;
+
+        color: var(--primary-color);
+
+        padding: .5rem 1rem;
+    }
+
+    nav a:hover {
+
+        background: var(--primary-color);
+
+        color: white;
+    }
+
+    nav a.active {
+
+        background: var(--accent-color);
+
+        color: black;
+    }
+
+    #directory {
+
+        grid-template-columns:
+            repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    footer {
+
+        display: flex;
+
+        justify-content: space-around;
+
+        text-align: left;
+    }
+}
