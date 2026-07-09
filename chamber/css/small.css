@@ -230,7 +230,7 @@ main h2 {
 
 /* ---------- Directory Grid ---------- */
 
-#directory {
+.grid-view {
 
     display: grid;
 
@@ -299,23 +299,46 @@ main h2 {
 
 .list-view {
 
-    display: flex !important;
+    display: flex;
 
     flex-direction: column;
+
+    gap: 0;
 }
 
 .list-view .member-card {
 
     display: grid;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+
+    align-items: center;
 
     text-align: left;
+
+    padding: 1rem;
+
+    border-radius: 0;
+}
+
+.list-view .member-card:nth-child(even) {
+
+    background: #f0f0f0;
 }
 
 .list-view .member-card img {
 
     display: none;
+}
+
+.list-view .member-card h3 {
+
+    margin: 0;
+}
+
+.list-view .member-card p {
+
+    margin: .2rem 0;
 }
 
 /* ---------- Footer ---------- */

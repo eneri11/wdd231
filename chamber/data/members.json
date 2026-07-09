@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Jollibee Foods Corporation",
+        "address": "10 F. Ortigas Jr. Road, Pasig City, Metro Manila",
+        "phone": "+63 2 8634 1111",
+        "website": "https://www.jollibee.com.ph",
+        "image": "jollibee.webp",
+        "membership": 3,
+        "category": "Restaurant",
+        "founded": "1978",
+        "description": "The Philippines' largest fast-food chain serving millions of customers worldwide."
+    },
+    {
+        "name": "National Book Store",
+        "address": "Mandaluyong City, Metro Manila",
+        "phone": "+63 2 8631 4311",
+        "website": "https://www.nationalbookstore.com",
+        "image": "national-bookstore.webp",
+        "membership": 2,
+        "category": "Retail",
+        "founded": "1942",
+        "description": "The country's leading bookstore and school supplies retailer."
+    },
+    {
+        "name": "San Miguel Corporation",
+        "address": "Ortigas Center, Mandaluyong City",
+        "phone": "+63 2 8632 3000",
+        "website": "https://www.sanmiguel.com.ph",
+        "image": "sanmiguel.webp",
+        "membership": 3,
+        "category": "Food and Beverage",
+        "founded": "1890",
+        "description": "One of Southeast Asia's largest diversified conglomerates."
+    },
+    {
+        "name": "Cebuana Lhuillier",
+        "address": "Gil Puyat Avenue, Makati City",
+        "phone": "+63 2 8779 9800",
+        "website": "https://www.cebuanalhuillier.com",
+        "image": "cebuana.webp",
+        "membership": 2,
+        "category": "Financial Services",
+        "founded": "1988",
+        "description": "A trusted provider of pawnshop, remittance, and financial services."
+    },
+    {
+        "name": "Goldilocks Bakeshop",
+        "address": "Mandaluyong City, Metro Manila",
+        "phone": "+63 2 8532 8890",
+        "website": "https://www.goldilocks.com.ph",
+        "image": "goldilocks.webp",
+        "membership": 2,
+        "category": "Bakery",
+        "founded": "1966",
+        "description": "A well-loved Filipino bakery known for cakes, pastries, and traditional foods."
+    },
+    {
+        "name": "Penshoppe",
+        "address": "Parañaque City, Metro Manila",
+        "phone": "+63 2 8462 8888",
+        "website": "https://www.penshoppe.com",
+        "image": "penshoppe.webp",
+        "membership": 1,
+        "category": "Fashion",
+        "founded": "1986",
+        "description": "A leading Filipino clothing and lifestyle brand."
+    },
+    {
+        "name": "Mang Inasal",
+        "address": "Ortigas Center, Pasig City",
+        "phone": "+63 2 8634 1111",
+        "website": "https://www.manginasal.ph",
+        "image": "manginasal.webp",
+        "membership": 3,
+        "category": "Restaurant",
+        "founded": "2003",
+        "description": "A popular Filipino restaurant chain famous for its grilled chicken and unlimited rice."
+    }
+]
