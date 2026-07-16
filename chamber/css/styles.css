@@ -6,7 +6,7 @@ main {
     padding: 1rem;
 }
 
-/* Desktop View*/
+/* Desktop View */
 @media (min-width: 768px) {
     main {
         display: grid;
@@ -22,5 +22,9 @@ main {
     .events,
     .spotlights {
         grid-column: 1;
+    }
+
+    .weather {
+        grid-column: 2;
     }
 }
