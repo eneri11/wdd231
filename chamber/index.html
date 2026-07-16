@@ -86,30 +86,39 @@
 
     <main>
 
-        <h1>Business Directory</h1>
-
-        <div class="directory-controls">
-
-            <button id="gridView" aria-label="Grid View">
-
-                ⬛
-
-            </button>
-
-            <button id="listView" aria-label="List View">
-
-                ☰
-
-            </button>
-
-        </div>
-
-        <section id="directory" class="grid-view">
-
-            <!-- JavaScript inserts business cards here -->
-
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-large.webp" alt="Chamber Hero Banner" class="hero-img">
+            <div class="cta-container">
+                <a href="join.html"> class="cta-btn">Join the Chamber</a>
+            </div>
         </section>
 
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>Annual Business Gala - next Tuesday at 7 pm </p>
+        </section>
+
+        <!-- Weather Section (Populated by JS) -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <!-- JS will inject temperature and description here -->
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-info">
+                <!-- JS will inject 3-day forecast here -->
+            </div>
+        </section>
+
+        <!-- Spotlights Section (Populated by JS)-->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards">
+                <!-- JS will inject 2-3 random gold/silver member cards here -->
+            </div>
+        </section>
     </main>
 
     <footer>
