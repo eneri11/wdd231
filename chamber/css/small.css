@@ -380,3 +380,29 @@ footer p {
 
     margin-bottom: .4rem;
 }
+
+.social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.social img {
+
+    width: 40px;
+
+    transition: transform .25s ease;
+
+}
+
+.social img:hover {
+
+    transform: scale(1.1);
+
+}
