@@ -74,4 +74,10 @@
 
         text-align: left;
     }
+
+    .social {
+
+        gap: 2rem;
+
+    }
 }
