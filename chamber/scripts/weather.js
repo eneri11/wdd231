@@ -1,42 +1,39 @@
-const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
-const lat = 'YOUR_LATITUDE';
-const lon = 'YOUR_LONGITUDE';
+// =====================================
+// Manila Weather
+// =====================================
 
-// Current Weather URL
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-// 3-Day Forecast URL 
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+// Replace this with your own API key
+const apiKey = "ffed040e65737e5a1af1745dd55f3ea5";
 
-async function fetchWeather() {
-  try {
-    // 1. Fetch Current Weather
-    const response = await fetch(currentWeatherUrl);
-    const data = await response.json();
-    
-    document.getElementById('weather-info').innerHTML = `
-      <p>Temperature: <strong>${Math.round(data.main.temp)}°F</strong></p>
-      <p>Condition: ${data.weather[0].description}</p>
-    `;
+// Manila Coordinates
+const lat = 14.5995;
+const lon = 120.9842;
 
-    // 2. Fetch 3-Day Forecast
-    const forecastResponse = await fetch(forecastUrl);
-    const forecastData = await forecastResponse.json();
-    
-    // OpenWeatherMap gives 5-day forecasts in 3-hour increments. 
-    // Filter to get roughly one reading per day (every 24 hours / 8 slots)
-    const dailyForecasts = forecastData.list.filter((item, index) => index % 8 === 0).slice(0, 3);
-    
-    let forecastHTML = '';
-    dailyForecasts.forEach(day => {
-      const date = new Date(day.dt * 1000).toLocaleDateString('en-US', { weekday: 'short' });
-      forecastHTML += `<p>${date}: <strong>${Math.round(day.main.temp)}°F</strong> - ${day.weather[0].description}</p>`;
-    });
-    
-    document.getElementById('forecast-info').innerHTML = forecastHTML;
+// Metric = Celsius
+const weatherURL =
+`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 
-  } catch (error) {
-    console.error("Error fetching weather data:", error);
-  }
+async function getWeather() {
+
+    try {
+
+        const response = await fetch(weatherURL);
+
+        if (!response.ok) {
+            throw new Error("Weather data not available.");
+        }
+
+        const data = await response.json();
+
+        displayCurrentWeather(data);
+        displayForecast(data);
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
 }
 
-fetchWeather();
+getWeather();
