@@ -16,7 +16,7 @@ async function getSpotlights() {
         const members = await response.json();
 
         displaySpotlights(members);
-
+        
     } catch (error) {
         console.error(error);
     }
@@ -25,7 +25,9 @@ async function getSpotlights() {
 getSpotlights();
 
 function displaySpotlights(members) {
-
+    console.log(members);
+    console.log(qualifiedMembers);
+    
     // Only Silver and Gold members
     const qualifiedMembers = members.filter(member =>
         member.membership === 2 || member.membership === 3
