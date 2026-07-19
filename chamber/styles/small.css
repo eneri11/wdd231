@@ -525,3 +525,44 @@ footer p {
 .spotlight-card a:hover {
     text-decoration: underline;
 }
+
+/* ===========================================
+   Spotlight Cards
+=========================================== */
+
+.spotlight-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+}
+
+.spotlight-card h3 {
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+}
+
+.spotlight-card p {
+    margin: .4rem 0;
+}
+
+.spotlight-card a {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
