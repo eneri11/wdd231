@@ -37,3 +37,56 @@ async function getWeather() {
 }
 
 getWeather();
+
+
+function displayCurrentWeather(data) {
+
+    const currentTemp =
+        document.querySelector("#current-temp");
+
+    const description =
+        document.querySelector("#weather-description");
+
+    const current = data.list[0];
+
+    currentTemp.textContent =
+        `${Math.round(current.main.temp)}°C`;
+
+    description.textContent =
+        current.weather[0].description;
+}
+
+function displayForecast(data) {
+
+    const forecast =
+        document.querySelector("#forecast");
+
+    forecast.innerHTML = "";
+
+    // Forecast every 24 hours (8 entries × 3 hours)
+    const days = [8, 16, 24];
+
+    days.forEach(index => {
+
+        const item = data.list[index];
+
+        const date = new Date(item.dt_txt);
+
+        const day = date.toLocaleDateString("en-US", {
+            weekday: "short"
+        });
+
+        const div = document.createElement("div");
+
+        div.classList.add("forecast-day");
+
+        div.innerHTML = `
+            <strong>${day}</strong> :
+            ${Math.round(item.main.temp)}°C
+        `;
+
+        forecast.appendChild(div);
+
+    });
+
+}
