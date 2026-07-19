@@ -1,183 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Basic Meta -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Business Directory | Manila Chamber of Commerce</title>
+    <title>Home | Manila Chamber of Commerce</title>
 
-    <meta name="description"
-      content="Explore trusted businesses that are members of the Manila Chamber of Commerce.">
+    <meta
+      name="description"
+      content="Welcome to the Manila Chamber of Commerce. Connect with local businesses, discover events, and become a member."
+    />
 
-    <meta name="author" content="Irene Gavina Costales">
+    <meta name="author" content="Irene Gavina Costales" />
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="Manila Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-      content="Official business directory of the Manila Chamber of Commerce.">
+    <meta property="og:title" content="Manila Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Official business directory of the Manila Chamber of Commerce."
+    />
 
-    <meta property="og:image"
-      content="https://eneri11.github.io/wdd231/chamber/images/social-preview.webp">
+    <meta
+      property="og:image"
+      content="https://eneri11.github.io/wdd231/chamber/images/social-preview.webp"
+    />
 
-    <meta property="og:url" content="https://eneri11.github.io/wdd231/chamber/directory.html">
+    <meta
+      property="og:url"
+      content="https://eneri11.github.io/wdd231/chamber/index.html"
+    />
     <!-- Favicon -->
-    <link rel="icon" href="images/faviconmcc.ico">
+    <link rel="icon" href="images/faviconmcc.ico" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="styles/normalize.css">
-
+    <link rel="stylesheet" href="styles/normalize.css" />
 
     <!-- Your Styles -->
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/directory.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
+      <div class="logo">
+        <img
+          src="images/chamberlogo.webp"
+          alt="Manila Chamber Logo"
+          width="70"
+          height="70"
+        />
 
-        <div class="logo">
-            <img src="images/chamberlogo.webp" alt="Manila Chamber Logo" width="70" height="70">
-
-            <div>
-                <p class="site-name">Manila Chamber of Commerce</p>
-                <p>Business Directory</p>
-            </div>
+        <div>
+          <p class="site-name">Manila Chamber of Commerce</p>
+          <p>Business Directory</p>
         </div>
+      </div>
 
-        <button id="menuButton" aria-label="Open Navigation">
-            ☰
-        </button>
+      <button id="menuButton" aria-label="Open Navigation">☰</button>
 
-        <nav id="navigation">
+      <nav id="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
 
-            <ul>
+          <li><a class="active" href="directory.html">Directory</a></li>
 
-                <li><a href="index.html">Home</a></li>
+          <li><a href="join.html">Join</a></li>
 
-                <li><a class="active" href="directory.html">Directory</a></li>
-
-                <li><a href="join.html">Join</a></li>
-
-                <li><a href="discover.html">Discover</a></li>
-
-            </ul>
-
-        </nav>
-
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <h1>Manila Chamber of Commerce</h1>
 
-        <h1>Manila Chamber of Commerce</h1>
+      <!-- Hero Section -->
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero-large.webp" media="(min-width: 768px)" />
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <img src="images/hero-large.webp" alt="Chamber Hero Banner" class="hero-img">
-            <div class="cta-container">
-                <a href="join.html" class="cta-btn">Join the Chamber</a>
-            </div>
+          <img
+            src="images/hero-small.webp"
+            alt="Manila Skyline"
+            width="1200"
+            height="600"
+          />
+        </picture>
+
+        <a href="join.html" class="cta-button"> Join the Chamber </a>
+      </section>
+
+      <!-- Home Content -->
+      <div class="home-grid">
+        <!-- Current Events -->
+        <section class="card">
+          <h2>Current Events</h2>
+
+          <p>
+            Join us this month for the Manila Business Networking Summit, where
+            entrepreneurs, professionals, and business owners connect to share
+            ideas and create new opportunities.
+          </p>
         </section>
 
-        <!-- Events Section -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <p>Annual Business Gala - next Tuesday at 7 PM</p>
-        </section>
+        <!-- Weather -->
+        <section class="card">
+          <h2>Current Weather</h2>
 
-        <!-- Weather Section (Populated by JS) -->
-        <section class="weather">
-            <h2>Current Weather</h2>
-            <div id="weather-info">
-                <!-- JS will inject temperature and description here -->
-            </div>
+          <div id="weather">
+            <p>
+              <strong>Temperature:</strong>
+              <span id="current-temp"></span>
+            </p>
+
+            <p>
+              <span id="weather-description"></span>
+            </p>
+
             <h3>3-Day Forecast</h3>
-            <div id="forecast-info">
-                <!-- JS will inject 3-day forecast here -->
-            </div>
+
+            <div id="forecast"></div>
+          </div>
         </section>
 
-        <!-- Spotlights Section (Populated by JS) -->
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-cards">
-                <!-- JS will inject 2-3 random gold/silver member cards here -->
-            </div>
+        <!-- Spotlights -->
+        <section class="card spotlight">
+          <h2>Member Spotlights</h2>
+
+          <div id="spotlights">
+            <!-- JavaScript inserts spotlight cards here -->
+          </div>
         </section>
+      </div>
     </main>
 
     <footer>
+      <section>
+        <p class="footer-title">Manila Chamber of Commerce</p>
 
-        <section>
+        <p>Bonifacio Drive</p>
 
-            <p class="footer-title">Manila Chamber of Commerce</p>
+        <p>Port Area, Manila, Philippines</p>
 
-            <p>Bonifacio Drive</p>
+        <p>info@manilachamber.ph</p>
 
-            <p>Port Area, Manila, Philippines</p>
+        <p>+63 2 8527 6081</p>
+      </section>
 
-            <p>info@manilachamber.ph</p>
+      <div class="social">
+        <a
+          href="https://github.com/eneri11/wdd231"
+          target="_blank"
+          rel="noopener"
+        >
+          <img src="images/github.png" alt="GitHub" width="40" height="40" />
+        </a>
 
-            <p>+63 2 8527 6081</p>
+        <a
+          href="https://www.linkedin.com/in/irene-costales-feb1179/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="images/linkedin.png"
+            alt="LinkedIn"
+            width="40"
+            height="40"
+          />
+        </a>
 
-        </section>
+        <a href="https://x.com/irenecostales2" target="_blank" rel="noopener">
+          <img src="images/x-logo.png" alt="X" width="40" height="40" />
+        </a>
+      </div>
 
-        <div class="social">
+      <section>
+        <p>
+          &copy;
+          <span id="currentYear"></span>
+          Irene Gavina Costales
+        </p>
 
-            <a href="https://github.com/eneri11/wdd231" target="_blank" rel="noopener">
+        <p>WDD 231 Chamber Project</p>
 
-                <img src="images/github.png" alt="GitHub" width="40" height="40">
-
-            </a>
-
-            <a href="https://www.linkedin.com/in/irene-costales-feb1179/" target="_blank"
-              rel="noopener">
-
-                <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
-
-            </a>
-
-            <a href="https://x.com/irenecostales2" target="_blank" rel="noopener">
-
-                <img src="images/x-logo.png" alt="X" width="40" height="40">
-
-            </a>
-
-        </div>
-
-        <section>
-
-            <p>
-                &copy;
-                <span id="currentYear"></span>
-                Irene Gavina Costales
-            </p>
-
-            <p>WDD 231 Chamber Project</p>
-
-            <p id="lastModified"></p>
-
-        </section>
-
+        <p id="lastModified"></p>
+      </section>
     </footer>
-
-</body>
-
+  </body>
 </html>
