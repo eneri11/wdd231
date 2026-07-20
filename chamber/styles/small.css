@@ -489,23 +489,27 @@ footer p {
 }
 
 /* ===========================================
-   Spotlight Cards
+   Spotlights
 =========================================== */
 
+#spotlights {
+    display: grid;
+    gap: 1rem;
+}
+
 .spotlight-card {
-    background: #fff;
+    text-align: center;
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    box-shadow: var(--shadow);
     padding: 1rem;
-    text-align: center;
 }
 
 .spotlight-card img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
-    margin: 0 auto 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 
 .spotlight-card h3 {
@@ -513,15 +517,8 @@ footer p {
     margin-bottom: .5rem;
 }
 
-.spotlight-card p {
-    margin: .4rem 0;
-}
-
 .spotlight-card a {
-    display: inline-block;
-    margin-top: .5rem;
     color: var(--secondary-color);
-    font-weight: bold;
     text-decoration: none;
 }
 
