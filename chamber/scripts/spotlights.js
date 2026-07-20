@@ -71,6 +71,7 @@ function displaySpotlights(members) {
         `;
 
         spotlightContainer.appendChild(card);
+        console.log(spotlightContainer.innerHTML);
     });
 
 }
