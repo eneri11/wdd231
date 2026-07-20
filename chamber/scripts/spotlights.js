@@ -29,7 +29,7 @@ function displaySpotlights(members) {
     console.log(members);
 
     const qualifiedMembers = members.filter(member =>
-        member.membership === 2 || member.membership === 3
+    Number(member.membership) >= 2
     );
 
     console.log(qualifiedMembers);
