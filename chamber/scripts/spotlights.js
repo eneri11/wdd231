@@ -41,6 +41,7 @@ function displaySpotlights(members) {
     spotlightContainer.innerHTML = "";
 
     selectedMembers.forEach(member => {
+         console.log(member);
 
         const card = document.createElement("section");
         card.classList.add("spotlight-card");
