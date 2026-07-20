@@ -25,18 +25,17 @@ async function getSpotlights() {
 getSpotlights();
 
 function displaySpotlights(members) {
+
     console.log(members);
-    console.log(qualifiedMembers);
-    
-    // Only Silver and Gold members
+
     const qualifiedMembers = members.filter(member =>
         member.membership === 2 || member.membership === 3
     );
 
-    // Shuffle the array
+    console.log(qualifiedMembers);
+
     qualifiedMembers.sort(() => Math.random() - 0.5);
 
-    // Display 3 members (or 2 if you prefer)
     const selectedMembers = qualifiedMembers.slice(0, 3);
 
     spotlightContainer.innerHTML = "";
@@ -65,13 +64,12 @@ function displaySpotlights(members) {
 
             <p>${membership}</p>
 
-            <a href="${member.website}" target="_blank">
+            <a href="${member.website}" target="_blank" rel="noopener">
                 Visit Website
             </a>
         `;
 
         spotlightContainer.appendChild(card);
-
     });
 
 }
