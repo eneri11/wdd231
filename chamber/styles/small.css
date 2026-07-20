@@ -489,44 +489,6 @@ footer p {
 }
 
 /* ===========================================
-   Spotlights
-=========================================== */
-
-#spotlights {
-    display: grid;
-    gap: 1rem;
-}
-
-.spotlight-card {
-    text-align: center;
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    padding: 1rem;
-}
-
-.spotlight-card img {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin: auto;
-    margin-bottom: 1rem;
-}
-
-.spotlight-card h3 {
-    color: var(--primary-color);
-    margin-bottom: .5rem;
-}
-
-.spotlight-card a {
-    color: var(--secondary-color);
-    text-decoration: none;
-}
-
-.spotlight-card a:hover {
-    text-decoration: underline;
-}
-
-/* ===========================================
    Spotlight Cards
 =========================================== */
 
