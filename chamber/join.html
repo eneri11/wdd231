@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home | Manila Chamber of Commerce</title>
+
+    <meta name="description"
+      content="Welcome to the Manila Chamber of Commerce. Connect with local businesses, discover events, and become a member." />
+
+    <meta name="author" content="Irene Gavina Costales" />
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Manila Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+      content="Official business directory of the Manila Chamber of Commerce." />
+
+    <meta property="og:image"
+      content="https://eneri11.github.io/wdd231/chamber/images/social-preview.webp" />
+
+    <meta property="og:url" content="https://eneri11.github.io/wdd231/chamber/index.html" />
+    <!-- Favicon -->
+    <link rel="icon" href="images/faviconmcc.ico" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS -->
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/chamberlogo.webp" alt="Manila Chamber Logo" width="70" height="70" />
+
+            <div>
+                <p class="site-name">Manila Chamber of Commerce</p>
+                <p>Business Directory</p>
+            </div>
+        </div>
+
+        <button id="menuButton" aria-label="Open Navigation">☰</button>
+
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a class="active" href="directory.html">Directory</a></li>
+
+                <li><a href="join.html">Join</a></li>
+
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Manila Chamber of Commerce</h1>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)" />
+
+                <img src="images/hero-small.png" alt="Manila Skyline" width="1200" height="600" />
+            </picture>
+
+            <a href="join.html" class="cta-button"> Join the Chamber </a>
+        </section>
+
+        <!-- Home Content -->
+        <div class="home-grid">
+            <!-- Current Events -->
+            <section class="card">
+                <h2>Current Events</h2>
+
+                <p>
+                    Join us this month for the Manila Business Networking Summit, where
+                    entrepreneurs, professionals, and business owners connect to share
+                    ideas and create new opportunities.
+                </p>
+            </section>
+
+            <!-- Weather -->
+            <section class="card">
+                <h2>Current Weather</h2>
+
+                <div id="weather">
+                    <p>
+                        <strong>Temperature:</strong>
+                        <span id="current-temp"></span>
+                    </p>
+
+                    <p>
+                        <span id="weather-description"></span>
+                    </p>
+
+                    <h3>3-Day Forecast</h3>
+
+                    <div id="forecast"></div>
+                </div>
+            </section>
+
+            <!-- Spotlights -->
+            <section class="spotlight-card">
+                <h2>Member Spotlights</h2>
+
+                <div id="spotlights">
+                    <!-- JavaScript inserts spotlight cards here -->
+                </div>
+            </section>
+        </div>
+
+        <form method="get" action="thankyou.html">
+            <!-- Form fields will go here -->
+        </form>
+
+        <label>First Name
+            <input type="text" name="fname" id="fname" required autocomplete="given-name"
+              title="Enter your first name">
+        </label>
+
+        <label>Last Name
+            <input type="text" name="lname" id="lname" required autocomplete="family-name"
+              title="Enter your last name">
+        </label>
+
+        <label>Organizational Title
+            <input type="text" name="title" id="title" autocomplete="organization-title"
+              title="At least 7 letters, spaces, or hyphens" pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label>Email Address
+            <input type="email" name="email" id="email" required autocomplete="email"
+              placeholder="example@domain.com" title="Enter a valid email address">
+        </label>
+
+        <label>Mobile Phone
+            <input type="tel" name="phone" id="phone" required autocomplete="tel"
+              title="Enter your phone number">
+        </label>
+
+        <label>Business / Organization Name
+            <input type="text" name="organization" id="organization" required
+              autocomplete="organization" title="Enter your organization name">
+        </label>
+
+        <label>Membership Level
+            <select name="membership" id="membership" required>
+                <option value="" disabled selected>Select a Level...</option>
+                <option value="np">NP Membership (Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        </label>
+
+        <label>Business Description
+            <textarea name="description" id="description" title="Describe your business"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Complete Application">
+
+        <div class="membership-cards">
+            <div class="card">
+                <h3>NP Membership</h3>
+                <button id="open-np">Learn More</button>
+            </div>
+            <!-- Repeat similar cards for Bronze, Silver, Gold -->
+        </div>
+
+        <!-- Modal Dialogs -->
+        <dialog id="modal-np">
+            <h2>NP Membership Benefits</h2>
+            <p>Non-profit membership with $0 fee. Access to community forums and basic listing.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+        <!-- Repeat dialogs for modal-bronze, modal-silver, modal-gold -->
+
+
+    </main>
+
+    <footer>
+        <section>
+            <p class="footer-title">Manila Chamber of Commerce</p>
+
+            <p>Bonifacio Drive</p>
+
+            <p>Port Area, Manila, Philippines</p>
+
+            <p>info@manilachamber.ph</p>
+
+            <p>+63 2 8527 6081</p>
+        </section>
+
+        <div class="social">
+            <a href="https://github.com/eneri11/wdd231" target="_blank" rel="noopener">
+                <img src="images/github.png" alt="GitHub" width="40" height="40" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/irene-costales-feb1179/" target="_blank"
+              rel="noopener">
+                <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40" />
+            </a>
+
+            <a href="https://x.com/irenecostales2" target="_blank" rel="noopener">
+                <img src="images/x-logo.png" alt="X" width="40" height="40" />
+            </a>
+        </div>
+
+        <section>
+            <p>
+                &copy;
+                <span id="currentYear"></span>
+                Irene Gavina Costales
+            </p>
+
+            <p>WDD 231 Chamber Project</p>
+
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+
+</html>
