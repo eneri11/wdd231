@@ -526,7 +526,8 @@ footer p {
     text-decoration: underline;
 }
 
-@keyframes fadeIn {
+/* Card Animation on Initial Load */
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -539,5 +540,5 @@ footer p {
 }
 
 .membership-cards .card {
-    animation: fadeIn 0.8s ease-out forwards;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
