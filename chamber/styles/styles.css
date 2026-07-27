@@ -1,9 +1,8 @@
-/* Mobile View (Default) */
+/* Mobile / Default View for Main */
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Desktop View */
