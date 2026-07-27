@@ -86,8 +86,36 @@
    Home Page Desktop Layout
 =========================================== */
 
-.home-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width: 768px) {
+
+    /* Home Page Grid Layout */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .events,
+    .spotlights {
+        grid-column: 1;
+    }
+
+    .weather {
+        grid-column: 2;
+    }
+
+    /* Hero Section (Home Page) */
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    /* Join Page Grid Layout (Form on Left, Cards on Right) */
+    .join-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+        align-items: start;
+    }
 }
 
 .hero img {
