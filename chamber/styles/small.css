@@ -473,15 +473,29 @@ form button[type="submit"]:hover {
     background: var(--secondary-color);
 }
 
-/* Membership Level Cards */
+/* Membership Level Cards & Load Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .membership-cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
+/* Combined into a single top-level rule block */
 .membership-cards .card {
     text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .membership-cards button {
@@ -496,23 +510,6 @@ form button[type="submit"]:hover {
 
 .membership-cards button:hover {
     background: var(--secondary-color);
-}
-
-/* Card Load Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.membership-cards .card {
-    animation: fadeInUp 0.8s ease-out forwards;
 }
 
 /* Modal Dialog Styles */
