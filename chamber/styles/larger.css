@@ -1,94 +1,73 @@
 /* ===========================================
-   Large Screen Styles
+   Manila Chamber of Commerce
+   Large Screen Styles (Desktop / Tablet)
 =========================================== */
 
 @media (min-width: 768px) {
 
+    /* ---------- Header & Navigation ---------- */
     header {
-
         display: flex;
-
         justify-content: space-between;
-
         align-items: center;
-
         padding: 1rem 2rem;
     }
 
     #menuButton {
-
         display: none;
     }
 
     nav {
-
         display: block;
     }
 
     nav ul {
-
         display: flex;
-
         gap: 1rem;
     }
 
     nav li {
-
         margin: 0;
     }
 
     nav a {
-
         background: transparent;
-
         color: var(--primary-color);
-
         padding: .5rem 1rem;
     }
 
     nav a:hover {
-
         background: var(--primary-color);
-
         color: white;
     }
 
     nav a.active {
-
         background: var(--accent-color);
-
         color: black;
     }
 
+    /* ---------- Directory Page Views ---------- */
     .grid-view {
-
-        grid-template-columns:
-            repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-    footer {
-
-        display: flex;
-
-        justify-content: space-around;
-
-        text-align: left;
+    .list-view .member-card {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        align-items: center;
+        gap: 1rem;
     }
 
-    .social {
-
-        gap: 2rem;
-
+    /* ---------- Home Page Layout ---------- */
+    .hero img {
+        max-height: 500px;
+        object-fit: cover;
     }
-}
 
-/* ===========================================
-   Home Page Desktop Layout
-=========================================== */
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
 
-@media (min-width: 768px) {
-
-    /* Home Page Grid Layout */
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -104,26 +83,22 @@
         grid-column: 2;
     }
 
-    /* Hero Section (Home Page) */
-    .hero {
-        grid-column: 1 / -1;
-    }
-
-    /* Join Page Grid Layout (Form on Left, Cards on Right) */
+    /* ---------- Join Page Layout ---------- */
     .join-container {
         display: grid;
         grid-template-columns: 3fr 2fr;
         gap: 2rem;
         align-items: start;
     }
-}
 
-.hero img {
-    max-height: 500px;
-    object-fit: cover;
-}
+    /* ---------- Footer ---------- */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
 
-.cta-button {
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
+    .social {
+        gap: 2rem;
+    }
 }
