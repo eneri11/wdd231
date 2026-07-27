@@ -23,9 +23,7 @@
 
     --max-width: 1200px;
 
-    --shadow:
-        0 2px 8px rgba(0, 0, 0, .1);
-
+    --shadow: 0 2px 8px rgba(0, 0, 0, .1);
     --radius: 10px;
 }
 
@@ -40,13 +38,9 @@
 /* ---------- Body ---------- */
 
 body {
-
     font-family: var(--body-font);
-
     background: var(--background-color);
-
     color: var(--text-color);
-
     line-height: 1.6;
 }
 
@@ -60,246 +54,173 @@ img {
 /* ---------- Header ---------- */
 
 header {
-
     background: white;
-
     box-shadow: var(--shadow);
-
     padding: 1rem;
 }
 
 /* ---------- Logo ---------- */
 
 .logo {
-
     display: flex;
-
     align-items: center;
-
     gap: 1rem;
 }
 
 .logo h1 {
-
     font-size: 1.3rem;
-
     color: var(--primary-color);
 }
 
 .logo p {
-
     color: var(--light-text);
-
     font-size: .9rem;
 }
 
 /* ---------- Hamburger ---------- */
 
 #menuButton {
-
     width: 100%;
-
     margin-top: 1rem;
-
     padding: .6rem;
-
     border: none;
-
     background: var(--primary-color);
-
     color: white;
-
     font-size: 1.5rem;
-
     cursor: pointer;
-
     border-radius: var(--radius);
 }
 
 /* ---------- Navigation ---------- */
 
 nav {
-
     display: none;
-
     margin-top: 1rem;
 }
 
 nav.open {
-
     display: block;
 }
 
 nav ul {
-
     list-style: none;
 }
 
 nav li {
-
     margin-bottom: .5rem;
 }
 
 nav a {
-
     display: block;
-
     text-decoration: none;
-
     color: white;
-
     background: var(--primary-color);
-
     padding: .8rem;
-
     border-radius: var(--radius);
-
     transition: .3s;
 }
 
 nav a:hover {
-
     background: var(--secondary-color);
 }
 
 nav a.active {
-
     background: var(--accent-color);
-
     color: black;
-
     font-weight: 700;
 }
 
 /* ---------- Main ---------- */
 
 main {
-
     max-width: var(--max-width);
-
     margin: auto;
-
     padding: 1rem;
 }
 
+main h1 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
 main h2 {
-
     margin-bottom: 1rem;
-
     color: var(--primary-color);
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Directory Buttons ---------- */
 
 .directory-controls {
-
     display: flex;
-
     justify-content: center;
-
     gap: 1rem;
-
     margin-bottom: 1.5rem;
 }
 
 .directory-controls button {
-
     width: 55px;
-
     height: 55px;
-
     border: none;
-
     background: var(--primary-color);
-
     color: white;
-
     font-size: 1.4rem;
-
     cursor: pointer;
-
     border-radius: var(--radius);
-
     transition: .3s;
 }
 
 .directory-controls button:hover {
-
     background: var(--secondary-color);
 }
 
 /* ---------- Directory Grid ---------- */
 
 .grid-view {
-
     display: grid;
-
     gap: 1.5rem;
 }
 
 /* ---------- Business Card ---------- */
 
 .member-card {
-
     background: var(--card-background);
-
     border-radius: var(--radius);
-
     box-shadow: var(--shadow);
-
     overflow: hidden;
-
     text-align: center;
-
     padding: 1rem;
 }
 
 .member-card img {
-
     width: 120px;
-
     height: 120px;
-
     object-fit: contain;
-
     margin: auto;
-
     margin-bottom: 1rem;
 }
 
 .member-card h3 {
-
     color: var(--primary-color);
-
     margin-bottom: .8rem;
 }
 
 .member-card p {
-
     margin-bottom: .4rem;
-
     font-size: .95rem;
 }
 
 .member-card a {
-
     color: var(--secondary-color);
-
     text-decoration: none;
-
     word-break: break-word;
 }
 
 .member-card a:hover {
-
     text-decoration: underline;
 }
 
 /* ---------- List View ---------- */
-
-/* ===========================================
-   List View
-=========================================== */
 
 .list-view {
     display: flex;
@@ -345,15 +266,10 @@ main h2 {
 /* ---------- Footer ---------- */
 
 footer {
-
     margin-top: 2rem;
-
     background: var(--primary-color);
-
     color: white;
-
     padding: 2rem 1rem;
-
     text-align: center;
 }
 
@@ -365,50 +281,36 @@ footer {
 }
 
 footer section {
-
     margin-bottom: 1.5rem;
 }
 
 footer h3 {
-
     margin-bottom: .7rem;
-
     color: var(--accent-color);
 }
 
 footer p {
-
     margin-bottom: .4rem;
 }
 
 .social {
-
     display: flex;
-
     justify-content: center;
-
     gap: 1rem;
-
     margin-bottom: 1rem;
-
 }
 
 .social img {
-
     width: 40px;
-
     transition: transform .25s ease;
-
 }
 
 .social img:hover {
-
     transform: scale(1.1);
-
 }
 
 /* ===========================================
-   Home Page - Hero
+   Home Page - Hero & Cards
 =========================================== */
 
 .hero {
@@ -428,17 +330,12 @@ footer p {
     bottom: 1.5rem;
     left: 50%;
     transform: translateX(-50%);
-
     background-color: var(--secondary-color);
     color: #fff;
     text-decoration: none;
-
     padding: .8rem 1.5rem;
-
     border-radius: var(--radius);
-
     font-weight: bold;
-
     transition: background-color .3s ease;
 }
 
@@ -446,18 +343,10 @@ footer p {
     background-color: var(--primary-color);
 }
 
-/* ===========================================
-   Home Grid
-=========================================== */
-
 .home-grid {
     display: grid;
     gap: 1.5rem;
 }
-
-/* ===========================================
-   Cards
-=========================================== */
 
 .card {
     background: white;
@@ -472,7 +361,7 @@ footer p {
 }
 
 /* ===========================================
-   Weather
+   Weather & Spotlights
 =========================================== */
 
 #weather {
@@ -487,10 +376,6 @@ footer p {
     padding: .5rem 0;
     border-bottom: 1px solid var(--border-color);
 }
-
-/* ===========================================
-   Spotlights
-=========================================== */
 
 #spotlights {
     display: grid;
@@ -526,7 +411,94 @@ footer p {
     text-decoration: underline;
 }
 
-/* Card Animation on Initial Load */
+/* ===========================================
+   Join Page - Form, Cards, Modals
+=========================================== */
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card-background);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    gap: .4rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+form button[type="submit"]:hover {
+    background: var(--secondary-color);
+}
+
+/* Membership Level Cards */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-cards .card {
+    text-align: center;
+}
+
+.membership-cards button {
+    margin-top: .8rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.membership-cards button:hover {
+    background: var(--secondary-color);
+}
+
+/* Card Load Animation */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -541,4 +513,29 @@ footer p {
 
 .membership-cards .card {
     animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Modal Dialog Styles */
+dialog {
+    border: none;
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog button.close-modal {
+    margin-top: 1.5rem;
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: .6rem 1.2rem;
+    border-radius: var(--radius);
+    cursor: pointer;
 }
