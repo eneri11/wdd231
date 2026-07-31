@@ -4,16 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Discover Page</title>
+
+    <!-- Fixed nested title error -->
+    <title>Discover | Manila Chamber of Commerce</title>
+
     <meta name="description"
       content="Discover the local attractions and community highlights in our area.">
+    <meta name="author" content="Irene Gavina Costales" />
+      
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/faviconmcc.ico" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <link rel="stylesheet" href="styles/discover.css">
+    
+    <!-- JavaScript (Removed weather.js & spotlights.js) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
     <script type="module" href="scripts/discover.js" defer src="scripts/discover.js"></script>
+  
+    
 </head>
 
 <body>
     <header>
-        <h1>Chamber of Commerce</h1>
+        <div class="logo">
+            <img src="images/chamberlogo.webp" alt="Manila Chamber Logo" width="70" height="70" />
+            <div>
+                <p class="site-name">Manila Chamber of Commerce</p>
+                <p>Business Directory</p>
+            </div>
+        </div>
+        
+        <button id="menuButton" aria-label="Open Navigation">☰</button>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
