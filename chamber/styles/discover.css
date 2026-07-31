@@ -119,20 +119,8 @@ footer {
     text-align: center;
 }
 
-.footer-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-}
-
 footer section {
     margin-bottom: 1.5rem;
-}
-
-footer h3 {
-    margin-bottom: .7rem;
-    color: var(--accent-color);
 }
 
 footer p {
