@@ -9,13 +9,17 @@
     font-weight: bold;
 }
 
+/* Combine all general .card styles into one top-level rule */
 .card {
-    .card {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-    }
+    background-color: var(--card-background, #ffffff);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
+
 
 .card figure {
     margin: 0;

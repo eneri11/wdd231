@@ -348,11 +348,15 @@ footer p {
     gap: 1.5rem;
 }
 
+/* Combine all general .card styles into one top-level rule */
 .card {
-    background: white;
-    padding: 1.25rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+    background-color: var(--card-background, #ffffff);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .card h2 {
