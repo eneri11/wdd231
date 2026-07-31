@@ -110,27 +110,28 @@
 }
 
 /* ---------- Footer ---------- */
-
 footer {
-    margin-top: 2rem;
-    background: var(--primary-color);
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
 }
 
 footer section {
     margin-bottom: 1.5rem;
 }
 
-footer p {
-    margin-bottom: .4rem;
-}
 
 .social {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 }
 
