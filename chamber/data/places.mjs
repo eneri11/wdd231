@@ -2,50 +2,50 @@
 export const places = [
   {
     name: "Historic Downtown",
-    address: "100 Main Street, Cityville, ST 12345",
-    description: "Explore charm, boutique shopping, local dining, and rich historical architecture.",
+    address: "General Luna St, Intramuros, Manila",
+    description: "Explore Spanish-era colonial architecture, cobbled streets, and rich history.",
     image: "images/downtown.webp"
   },
   {
     name: "Central City Park",
-    address: "500 Park Avenue, Cityville, ST 12345",
-    description: "A lush green getaway featuring walking trails, picnic areas, and community events.",
+    address: "Rizal Park, Ermita, Manila",
+    description: "A iconic urban park featuring monuments, gardens, and walking trails.",
     image: "images/park.webp"
   },
   {
     name: "Community Art Center",
-    address: "202 Gallery Way, Cityville, ST 12345",
-    description: "Showcasing local talent with rotating exhibitions, workshops, and live performances.",
+    address: "Bonifacio Global City, Taguig, Metro Manila",
+    description: "Modern galleries showcasing contemporary Filipino artwork and public exhibits.",
     image: "images/art-center.webp"
   },
   {
     name: "Riverfront Promenade",
-    address: "50 River Road, Cityville, ST 12345",
-    description: "Scenic waterfront views perfect for evening walks, cycling, and dining outdoors.",
+    address: "Pasig River Esplanade, Manila",
+    description: "Scenic walkway featuring evening views, dining spots, and city reflections.",
     image: "images/riverfront.webp"
   },
   {
     name: "Pioneer History Museum",
-    address: "310 Heritage Lane, Cityville, ST 12345",
-    description: "Discover the region's origins with interactive exhibits and preserved artifacts.",
+    address: "Heritage Lane, Manila",
+    description: "Discover the regional origins with interactive cultural exhibits and artifacts.",
     image: "images/museum.webp"
   },
   {
     name: "Botanical Gardens",
-    address: "777 Garden Drive, Cityville, ST 12345",
-    description: "Beautiful themed gardens showcasing native flora and exotic plant collections.",
+    address: "Highland Drive, Baguio City",
+    description: "Beautiful themed gardens displaying native flora, orchids, and greenhouses.",
     image: "images/gardens.webp"
   },
   {
     name: "Civic Farmers Market",
-    address: "400 Plaza Circle, Cityville, ST 12345",
-    description: "Fresh local produce, handcrafted goods, and street food every weekend.",
+    address: "Plaza Circle Market, Manila",
+    description: "Bustling market stalls selling local fresh produce, street food, and crafts.",
     image: "images/market.webp"
   },
   {
     name: "Summit View Lookout",
-    address: "1 Highland Drive, Cityville, ST 12345",
-    description: "Breathtaking panoramic views of the city skyline and surrounding mountain range.",
+    address: "Highland Viewpoint, Cebu",
+    description: "Breathtaking panoramic views of the metro skyline and surrounding bay.",
     image: "images/lookout.webp"
   }
 ];
