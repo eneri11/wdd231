@@ -10,13 +10,11 @@
 }
 
 .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    .card {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+    }
 }
 
 .card figure {
@@ -107,39 +105,4 @@
             "card1 card2 card3 card4"
             "card5 card6 card7 card8";
     }
-}
-
-/* ---------- Footer ---------- */
-footer {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-}
-
-.footer-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-}
-
-footer section {
-    margin-bottom: 2rem;
-}
-
-
-.social {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
-}
-
-.social img {
-    width: 40px;
-    transition: transform .25s ease;
-}
-
-.social img:hover {
-    transform: scale(1.1);
 }
