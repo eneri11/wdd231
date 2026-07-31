@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akyat-Tanaw Site Plan | WDD 231</title>
+    <meta name="description" content="Site plan for the Akyat-Tanaw project for WDD 231.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+
+<body>
+    <header>
+        <h1>Akyat-Tanaw Site Plan</h1>
+        <p>WDD 231 Individual Project Plan</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>Name:</strong> Akyat-Tanaw (Climb & View)</p>
+            <p><strong>Reason:</strong> <em>Akyat-Tanaw</em> combines two active Tagalog words
+                (<em>Akyat</em> = climb, <em>Tanaw</em> = view) to instantly tell local hikers what
+                to expect: a rewarding ascent leading to scenic mountain views, lookouts, or summit
+                decks.</p>
+            <p><strong>Optional Domain:</strong> <code>akyat-tanaw.ph</code></p>
+        </section>
+
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>The purpose of <strong>Akyat-Tanaw</strong> is to provide local hikers and outdoor
+                enthusiasts with quick, reliable, and visually rich guides for scenic day hikes
+                across the Philippines. The site offers essential trail profiles, including
+                difficulty ratings, estimated hiking times, peak view highlights, basic commuting
+                directions, and safety tips to help visitors plan successful day trips.</p>
+        </section>
+
+        <section>
+            <h2>3. Scenarios</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> "I'm a beginner looking for an easy day hike near
+                    Metro Manila that has a great sea-of-clouds view. Where can I find a trail that
+                    matches my fitness level?"</li>
+                <li><strong>Scenario 2:</strong> "How do I commute to the jump-off point for Mount
+                    Batulao, and how much are the guide fees?"</li>
+                <li><strong>Scenario 3:</strong> "What is the difference between a backtrail and a
+                    traverse hike on this specific mountain?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Color Scheme</h2>
+            <p>The site plan and future website will exclusively use the following color palette:
+            </p>
+            <div class="color-palette">
+                <div class="color-box primary">
+                    <span>Primary (#2E5A36)</span>
+                    <p>Forest Green: Headers, primary nav, main action buttons.</p>
+                </div>
+                <div class="color-box secondary">
+                    <span>Secondary (#D97724)</span>
+                    <p>Warm Amber: Accent elements, hover states, badges.</p>
+                </div>
+                <div class="color-box background">
+                    <span>Background (#F8F9FA)</span>
+                    <p>Off-White: Body background for clean readability.</p>
+                </div>
+                <div class="color-box text">
+                    <span>Text (#212529)</span>
+                    <p>Charcoal: Body text for high contrast accessibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Typography</h2>
+            <ul>
+                <li><strong>Primary Heading Font:</strong> <span
+                      class="heading-font-demo">Montserrat</span> — Used for main title tags
+                    (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) and
+                    navigation items.</li>
+                <li><strong>Body Font:</strong> <span class="body-font-demo">Open Sans</span> — Used
+                    for standard paragraphs, trail details, lists, and forms.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Wireframes</h2>
+            <p>Black-and-white layout sketches for mobile and desktop viewports demonstrating the
+                home page structure:</p>
+
+            <div class="wireframe-container">
+                <div class="wireframe-card">
+                    <h3>Small Viewport (Mobile)</h3>
+                    <p>Single-column stacked layout with collapsible burger menu, search banner, and
+                        vertical cards.</p>
+                    <img src="images/mobile_view_wireframe.png" alt="Mobile Wireframe Layout Sketch"
+                      width="300">
+                </div>
+                <div class="wireframe-card">
+                    <h3>Large Viewport (Desktop)</h3>
+                    <p>Horizontal header navigation, full-width hero section, and a 3-column grid
+                        for featured trails.</p>
+                    <img src="images/desktop_view_wireframe.png"
+                      alt="Desktop Wireframe Layout Sketch" width="500">
+                </div>
+            </div>
+            <p><em>Note: Be sure to place your wireframe image files in an <code>images</code>
+                    folder and update the image path/filenames above to match.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Akyat-Tanaw Site Plan | WDD 231</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

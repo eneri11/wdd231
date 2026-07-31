@@ -1,0 +1,140 @@
+/* Color Variables based on the selected scheme */
+:root {
+    --primary-color: #2E5A36;
+    --secondary-color: #D97724;
+    --bg-color: #F8F9FA;
+    --text-color: #212529;
+    --card-bg: #FFFFFF;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #E2E8F0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    background-color: var(--card-bg);
+    border-left: 5px solid var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Color Scheme Section */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 6px;
+    color: white;
+}
+
+.color-box.primary {
+    background-color: var(--primary-color);
+}
+
+.color-box.secondary {
+    background-color: var(--secondary-color);
+}
+
+.color-box.background {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+}
+
+.color-box.text {
+    background-color: var(--text-color);
+}
+
+.color-box span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Typography Demos */
+.heading-font-demo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.body-font-demo {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Wireframe Layout */
+.wireframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.wireframe-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.wireframe-card img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
