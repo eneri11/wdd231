@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Mt. Batulao",
+    "location": "Nasugbu, Batangas",
+    "difficulty": "Easy",
+    "elevation": "811m",
+    "image": "images/batulao.jpg",
+    "description": "Known for its rolling open slopes and scenic 360-degree ridge trails."
+  },
+  {
+    "id": 2,
+    "name": "Mt. Daraitan",
+    "location": "Tanay, Rizal",
+    "difficulty": "Moderate",
+    "elevation": "739m",
+    "image": "images/daraitan.jpg",
+    "description": "Features rugged limestone trails and a magnificent view of the Tinipak River."
+  },
+  {
+    "id": 3,
+    "name": "Mt. Maculot",
+    "location": "Cuenca, Batangas",
+    "difficulty": "Moderate",
+    "elevation": "930m",
+    "image": "images/maculot.jpg",
+    "description": "Famous for the Rockies rock formation overlooking Taal Lake."
+  },
+  {
+    "id": 4,
+    "name": "Mt. Ulap",
+    "location": "Itogon, Benguet",
+    "difficulty": "Moderate",
+    "elevation": "1846m",
+    "image": "images/ulap.jpg",
+    "description": "Pine forests, grassland ridges, and iconic sea-of-clouds vistas."
+  },
+  {
+    "id": 5,
+    "name": "Mt. Pulag",
+    "location": "Kabayan, Benguet",
+    "difficulty": "Challenging",
+    "elevation": "2928m",
+    "image": "images/pulag.jpg",
+    "description": "The highest peak in Luzon, celebrated for its dwarf bamboo slopes."
+  },
+  {
+    "id": 6,
+    "name": "Mt. Manabu",
+    "location": "Sto. Tomas, Batangas",
+    "difficulty": "Easy",
+    "elevation": "760m",
+    "image": "images/manabu.jpg",
+    "description": "Beginner-friendly trail with lush forest cover and a garden peak."
+  },
+  {
+    "id": 7,
+    "name": "Mt. Pinatubo",
+    "location": "Botolan, Zambales",
+    "difficulty": "Easy",
+    "elevation": "1486m",
+    "image": "images/pinatubo.jpg",
+    "description": "Off-road 4x4 ride followed by a trek to a majestic crater lake."
+  },
+  {
+    "id": 8,
+    "name": "Mt. Talamitam",
+    "location": "Nasugbu, Batangas",
+    "difficulty": "Easy",
+    "elevation": "607m",
+    "image": "images/talamitam.jpg",
+    "description": "Open grassy slopes ideal for day hikes and sunset viewing."
+  },
+  {
+    "id": 9,
+    "name": "Mt. Pico de Loro",
+    "location": "Maragondon, Cavite",
+    "difficulty": "Moderate",
+    "elevation": "664m",
+    "image": "images/pico.jpg",
+    "description": "Distinctive monolith peak offering views of the South China Sea."
+  },
+  {
+    "id": 10,
+    "name": "Mt. Daguldol",
+    "location": "San Juan, Batangas",
+    "difficulty": "Moderate",
+    "elevation": "670m",
+    "image": "images/daguldol.jpg",
+    "description": "Combines a coastal beach jump-off with a scenic forest summit."
+  },
+  {
+    "id": 11,
+    "name": "Mt. Tapulao",
+    "location": "Palauig, Zambales",
+    "difficulty": "Challenging",
+    "elevation": "2037m",
+    "image": "images/tapulao.jpg",
+    "description": "Pine-tree-lined trail with cool mountain temperatures."
+  },
+  {
+    "id": 12,
+    "name": "Mt. Arayat",
+    "location": "Arayat, Pampanga",
+    "difficulty": "Challenging",
+    "elevation": "1026m",
+    "image": "images/arayat.jpg",
+    "description": "Extinct stratovolcano rising above the Central Luzon plains."
+  },
+  {
+    "id": 13,
+    "name": "Mt. Kulis",
+    "location": "Tanay, Rizal",
+    "difficulty": "Easy",
+    "elevation": "620m",
+    "image": "images/kulis.jpg",
+    "description": "Popular camping spot known for sea-of-clouds morning view decks."
+  },
+  {
+    "id": 14,
+    "name": "Mt. Kalisungan",
+    "location": "Calauan, Laguna",
+    "difficulty": "Easy",
+    "elevation": "760m",
+    "image": "images/kalisungan.jpg",
+    "description": "Panoramic view of Laguna's seven lakes from the grassy summit."
+  },
+  {
+    "id": 15,
+    "name": "Mt. Cristobal",
+    "location": "San Pablo, Laguna",
+    "difficulty": "Challenging",
+    "elevation": "1470m",
+    "image": "images/cristobal.jpg",
+    "description": "Dense mossy forests and intriguing volcanic crater trails."
+  }
+]
