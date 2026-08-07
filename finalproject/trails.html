@@ -7,14 +7,13 @@
     <title>Trail Directory | Akyat-Tanaw</title>
     <meta name="description"
       content="Explore 15+ top mountain trails with elevation details, photos, and view decks.">
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Irene Gavina Costales">
 
-    <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="styles/styles.css">
+    
     <script type="module">
-        import { getTrailData, displayTrails, setupFilters } from './js/fetch.mjs';
-        import { initModal } from './js/modal.mjs';
+        import { getTrailData, displayTrails, setupFilters } from './scripts/fetch.mjs';
+        import { initModal } from './scripts/modal.mjs';
 
         document.addEventListener('DOMContentLoaded', async () => {
             const trails = await getTrailData();
