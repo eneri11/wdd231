@@ -14,7 +14,7 @@
     "location": "Tanay, Rizal",
     "difficulty": "Moderate",
     "elevation": "739m",
-    "image": "images/daraitan.jpg",
+    "image": "images/daraitan.webp",
     "description": "Features rugged limestone trails and a magnificent view of the Tinipak River."
   },
   {
@@ -50,7 +50,7 @@
     "location": "Sto. Tomas, Batangas",
     "difficulty": "Easy",
     "elevation": "760m",
-    "image": "images/manabu.jpg",
+    "image": "images/manabu.webp",
     "description": "Beginner-friendly trail with lush forest cover and a garden peak."
   },
   {
@@ -104,7 +104,7 @@
     "location": "Arayat, Pampanga",
     "difficulty": "Challenging",
     "elevation": "1026m",
-    "image": "images/arayat.jpg",
+    "image": "images/arayat.webp",
     "description": "Extinct stratovolcano rising above the Central Luzon plains."
   },
   {
@@ -122,7 +122,7 @@
     "location": "Calauan, Laguna",
     "difficulty": "Easy",
     "elevation": "760m",
-    "image": "images/kalisungan.jpg",
+    "image": "images/kalisungan.webp",
     "description": "Panoramic view of Laguna's seven lakes from the grassy summit."
   },
   {
